@@ -36,13 +36,13 @@ nav {
 }
 
 .menu a {
-    color: #FFC107; /* Bright yellow */
+    color: #FFC107;
     text-decoration: none;
     font-weight: bold;
 }
 
 .menu a:hover {
-    color: #FFD54F; /* Light yellow */
+    color: #FFD54F;
 }
 
 h1 {
@@ -68,7 +68,7 @@ h1 {
 }
 
 .cta-button:hover {
-    background-color: #FFD54F; /* Lighter yellow */
+    background-color: #FFD54F;
 }
 
 .features {
@@ -82,7 +82,7 @@ h1 {
 
 .feature {
     background: white;
-    border: 2px solid #00509E; /* Deep blue */
+    border: 2px solid #00509E; 
     border-radius: 10px;
     margin: 10px;
     padding: 15px;
@@ -153,17 +153,15 @@ h1 {
 }
 
 #contact-form button:hover {
-    background-color: #a79624; /* Change color on hover */
+    background-color: #a79624; 
 }
 
 footer {
     text-align: center;
     padding: 10px;
     background-color: #003366;
-    color: #FFFFFF; /* White text */
+    color: #FFFFFF; 
 }
-
-/* Responsive Styles */
 @media (max-width: 768px) {
     .features {
         flex-direction: column;
