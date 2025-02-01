@@ -39,24 +39,88 @@
 <a href="https://www.mercedes-benz.co.in/passengercars/models/saloon/c-class/overview.html" class="cta-button">More Information</a>         </div>     </section> <section class="services" id="services"><h2>OUR SERVICES</h2> <ul><li>Car Sales</li><li>Financing Options</li><li>Vehicle Maintenance</li><li>Insurance Assistance</li></ul>     
 </section><section id="contact" class="cta"><h2>Contact Us!</h2>         <p>We'd love to hear from you. Fill out the form below:</p>         <form id="contact-form"><input type="text" id="name" placeholder="Your Name" required> <input type="email" id="email" placeholder="Your Email" required><textarea id="message" placeholder="Your Message" required></textarea> <button type="submit" class="cta-button">Send Message</button></form>
 </section>          
-<footer><p>&copy; 2024 Car Hub. All rights reserved.</p>     </footer> 
-</body> </html>  @keyframes blink {     10%, 100% {         opacity: 1;     
-}     20% {         opacity: 0;     
+<footer><p>&copy; 2024 Car Hub. All rights reserved.</p>     
+</footer> 
+</body> 
+</html> 
+
+
+
+@keyframes blink 
+{     
+10%, 100% 
+{    
+opacity: 1;     
+}     
+20% 
+{         
+opacity: 0;     
 } 
 }  
-html {     
-scroll-behavior: smooth; }  body {     
-font-family: 'Times New Roman', Times, serif;     margin: 0;     padding: 0;     background-color: #a7eaea; }  header {    
-background: linear-gradient(135deg, #003366, #00509E);     color: #FFFFFF;     padding: 60px 20px;     text-align: center;     position: relative;     overflow: hidden; }  nav {    
-background-color: #020202;     padding: 10px 0; }  .menu {     list-style-type: none;     text-align: center;     padding: 0;     margin: 0; }  .menu li {    
-display: inline;     margin: 0 15px; }  .menu a {     color: #FFC107; /* Bright yellow */     text-decoration: none;     font-weight: bold; }  .menu a:hover {     
-color: #FFD54F; /* Light yellow */ }  h1 {     margin: 0;     font-size: 2.8em;     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);     z-index: 1;     position: relative;     animation: blink 1s infinite; }  .cta-button 
-{display: block;     width: 200px;     margin: 20px auto;     padding: 10px;     background-color: #FFC107;     color: #003366;     text-decoration: none;     border: 2px solid black;     border-radius: 5px;     text-align: center; }  .cta-button:hover 
-{background-color: #FFD54F; /* Lighter yellow */ }  .features {     display: flex;     flex-wrap: wrap;     justify-content: space-around;     padding: 20px;     border: 2px #000;     border-radius: 5px; }  .feature {     background: white;     border: 2px solid #00509E; /* Deep blue */     border-radius: 10px;     margin: 10px;     padding: 15px;     text-align: justify;     width: 220px;     transition: transform 0.3s, box-shadow 0.3s;     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }  .feature img 
-{width: 100%;     height: auto;     max-width: 200px;     border: 2px solid black;     border-radius: 5px; }  .feature:hover {     transform: scale(1.05);     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }  .services {     padding: 20px;     background-color: #eaeaea;     text-align: center; }  .services ul {     list-style-type: none;     padding: 0; }  .services li {     margin: 5px 0; }  .cta 
-{text-align: center;     padding: 20px; }  #contact-form {     display: inline-block;     text-align: left;     margin-top: 20px;     border: 0 solid #0a0808;     border-radius: 5px; }  
-#contact-form input,  #contact-form textarea {     width: 100%;     padding: 10px;     margin: 10px 0;     border: 1px solid #0a0808;     border-radius: 5px; }  #contact-form button {     display: block;     width: 105%;     background-color: #faea0d;     color: #000;     padding: 10px;     border-radius: 5px;     cursor: pointer; }  #contact-form button:hover {     background-color: #a79624; /* Change color on hover */ }  
-footer {text-align: center;     padding: 10px;     background-color: #003366;     color: #FFFFFF; /* White text */ }  /* Responsive Styles */ @media (max-width: 768px) {.features 
-{flex-direction: column;         align-items: center;     }      .feature {         width: 90%; /* Full width on smaller screens */     
+html 
+
+
+
+{     
+scroll-behavior: smooth; 
+}  
+body 
+{     
+font-family: 'Times New Roman', Times, serif;     margin: 0;     padding: 0;     background-color: #a7eaea; 
+}  
+header 
+{    
+background: linear-gradient(135deg, #003366, #00509E);     color: #FFFFFF;     padding: 60px 20px;     text-align: center;     position: relative;     overflow: hidden; 
+}  
+nav 
+{    
+background-color: #020202;     padding: 10px 0; 
+}  
+.menu 
+{     list-style-type: none;     text-align: center;     padding: 0;     margin: 0; 
+}  
+.menu li 
+{    
+display: inline;     margin: 0 15px; 
+}  
+.menu a 
+{     color: #FFC107; /* Bright yellow */     text-decoration: none;     font-weight: bold; 
+}  
+.menu a:hover 
+{     
+color: #FFD54F; /* Light yellow */ 
+}  h1 
+{     margin: 0;     font-size: 2.8em;     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);     z-index: 1;     position: relative;     animation: blink 1s infinite; }
+.cta-button 
+{
+display: block;     width: 200px;     margin: 20px auto;     padding: 10px;     background-color: #FFC107;     color: #003366;     text-decoration: none;     border: 2px solid black;     border-radius: 5px;     text-align: center; }  
+.cta-button:hover 
+{
+background-color: #FFD54F; /* Lighter yellow */ }
+.features 
+{     display: flex;     flex-wrap: wrap;     justify-content: space-around;     padding: 20px;     border: 2px #000;     border-radius: 5px; }  
+.feature 
+{     background: white;     border: 2px solid #00509E; /* Deep blue */     border-radius: 10px;     margin: 10px;     padding: 15px;     text-align: justify;     width: 220px;     transition: transform 0.3s, box-shadow 0.3s;     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); }  
+.feature img 
+{
+width: 100%;     height: auto;     max-width: 200px;     border: 2px solid black;     border-radius: 5px; }  
+.feature:hover 
+{     transform: scale(1.05);     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }  
+.services 
+{     padding: 20px;     background-color: #eaeaea;     text-align: center; }  
+.services ul {     list-style-type: none;     padding: 0; }  
+.services li {     margin: 5px 0; }  .cta 
+{
+text-align: center;     padding: 20px; }  
+#contact-form {     display: inline-block;     text-align: left;     margin-top: 20px;     border: 0 solid #0a0808;     border-radius: 5px; }  
+#contact-form input,  #contact-form textarea {     width: 100%;     padding: 10px;     margin: 10px 0;     border: 1px solid #0a0808;     border-radius: 5px; }  
+#contact-form button {     display: block;     width: 105%;     background-color: #faea0d;     color: #000;     padding: 10px;     border-radius: 5px;     cursor: pointer; }  
+#contact-form button:hover {     background-color: #a79624; /* Change color on hover */ }  
+footer {text-align: center;     padding: 10px;     background-color: #003366;     color: #FFFFFF; /* White text */ }  /* Responsive Styles */ @media (max-width: 768px) 
+{
+.features 
+{
+flex-direction: column;         align-items: center;     }     
+.feature {         width: 90%; /* Full width on smaller screens */     
 } 
 }
