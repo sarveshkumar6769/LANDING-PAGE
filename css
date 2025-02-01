@@ -6,21 +6,38 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #a7eaea;
+    background-color: #d285f3;
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 header {
-    background: linear-gradient(135deg, #003366, #00509E);
+    background: linear-gradient(135deg, #0011ff, #0bf103);
     color: #FFFFFF;
     padding: 60px 20px;
     text-align: center;
     position: relative;
     overflow: hidden;
+    animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 nav {
     background-color: #020202;
     padding: 10px 0;
+    animation: slideDown 2s ease-in-out;
+}
+@keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
 }
 
 .menu {
@@ -33,17 +50,26 @@ nav {
 .menu li {
     display: inline;
     margin: 0 15px;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.3); opacity: 0; }
+    50% { transform: scale(1.1); opacity: 0.5; }
+    100% { transform: scale(1); opacity: 1; }
 }
 
 .menu a {
-    color: #FFC107;
+    color: #f1c951;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s ease-in-out;
 }
 
 .menu a:hover {
-    color: #FFD54F;
+    color: #ffd64ff0;
 }
+
 
 h1 {
     margin: 0;
@@ -51,25 +77,40 @@ h1 {
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     z-index: 1;
     position: relative;
-    animation: blink 1s infinite;
+    animation: pulse 2s infinite;
 }
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
 
 .cta-button {
     display: block;
     width: 200px;
     margin: 20px auto;
     padding: 10px;
-    background-color: #FFC107;
-    color: #003366;
+    background-color: #e3b221;
+    color: #0080ff;
     text-decoration: none;
     border: 2px solid black;
     border-radius: 5px;
     text-align: center;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 .cta-button:hover {
     background-color: #FFD54F;
+    transform: scale(1.1);
 }
+
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 
 .features {
     display: flex;
@@ -82,7 +123,7 @@ h1 {
 
 .feature {
     background: white;
-    border: 2px solid #00509E; 
+    border: 2px solid #00509E;
     border-radius: 10px;
     margin: 10px;
     padding: 15px;
@@ -90,21 +131,26 @@ h1 {
     width: 220px;
     transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1s ease-in-out;
 }
 
+@keyframes zoomIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
 .feature img {
     width: 100%;
     height: auto;
     max-width: 200px;
     border: 2px solid black;
     border-radius: 5px;
+    animation: fadeIn 1s ease-in;
 }
 
 .feature:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
-
 .services {
     padding: 20px;
     background-color: #eaeaea;
@@ -118,6 +164,7 @@ h1 {
 
 .services li {
     margin: 5px 0;
+    animation: fadeInUp 1s ease-in-out;
 }
 
 .cta {
@@ -133,8 +180,17 @@ h1 {
     border-radius: 5px;
 }
 
-#contact-form input, 
-#contact-form textarea {
+
+#contact-form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 20px;
+    border: 0 solid #0a0808;
+    border-radius: 5px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+#contact-form input, #contact-form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -150,25 +206,28 @@ h1 {
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 #contact-form button:hover {
-    background-color: #a79624; 
+    background-color: #db2f2f;
+    transform: scale(1.1);
 }
 
 footer {
     text-align: center;
     padding: 10px;
     background-color: #003366;
-    color: #FFFFFF; 
+    color: #FFFFFF;
+    animation: fadeIn 2s ease-in;
 }
+
 @media (max-width: 768px) {
     .features {
         flex-direction: column;
         align-items: center;
     }
-    
     .feature {
-        width: 90%; /* Full width on smaller screens */
+        width: 90%;
     }
 }
